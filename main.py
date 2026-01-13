@@ -96,8 +96,8 @@ is_on = True
 while is_on:
 
     if AI_PLAY:
-        if not path:
-            path = a_star(snake_position, target_pos, snake_body)
+        
+        path = a_star(snake_position, target_pos, snake_body)
 
         if path:
             next_cell = path.pop(0)
